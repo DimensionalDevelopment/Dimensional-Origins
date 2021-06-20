@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "dimensionalorigins",
   "version": "${version}",
 
   "name": "Example Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Waterpicker"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -19,18 +19,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.dimdev.dimensionalorigins.DimensionalOrigins"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "dimensionalorigins.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "1.17.x",
-    "java": ">=16"
+    "minecraft": "1.17.*",
+    "origins": "*",
+    "dimdoors": "*"
   },
   "suggests": {
     "another-mod": "*"
